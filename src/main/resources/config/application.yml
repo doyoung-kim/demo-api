@@ -1,0 +1,29 @@
+#############
+### 공통 
+##############
+# embeded tomcat
+server:  
+  tomcat:
+    uri-encoding: UTF-8  
+
+
+     
+spring:
+  profiles:
+    active: local
+    
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+    version: "OPENAPI_3_0"
+    groups.enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    displayRequestDuration: true
+    groups-order: DESC
+
+  
+ 
+  
